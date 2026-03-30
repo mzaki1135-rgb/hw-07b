@@ -62,6 +62,7 @@ def classifyTriangle(a,b,c):
         return 'Scalene'
     else:
         return 'Isoceles'
+        
 def testScalene(self):
     self.assertEqual(classifyTriangle(3,4,6),'Scalene')
 
