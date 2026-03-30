@@ -62,3 +62,23 @@ def classifyTriangle(a,b,c):
         return 'Scalene'
     else:
         return 'Isoceles'
+def testScalene(self):
+    self.assertEqual(classifyTriangle(3,4,6),'Scalene')
+
+def testIsosceles(self):
+    self.assertEqual(classifyTriangle(5,5,3),'Isoceles')
+
+def testInvalidZero(self):
+    self.assertEqual(classifyTriangle(0,1,2),'InvalidInput')
+
+def testInvalidNegative(self):
+    self.assertEqual(classifyTriangle(-1,2,3),'InvalidInput')
+
+def testTooLarge(self):
+    self.assertEqual(classifyTriangle(201,2,3),'InvalidInput')
+
+def testNotTriangle(self):
+    self.assertEqual(classifyTriangle(1,2,3),'NotATriangle')
+
+def testRightTriangleC(self):
+    self.assertEqual(classifyTriangle(6,8,10),'Right')
