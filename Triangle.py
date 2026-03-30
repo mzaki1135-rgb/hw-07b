@@ -10,7 +10,6 @@ The primary goal of this file is to demonstrate a simple python program to class
 """
 
 def classifyTriangle(a,b,c):
-    def classifyTriangle(a, b, c):
     # Check for invalid inputs
     if not all(isinstance(x, int) for x in [a, b, c]):
         return 'InvalidInput'
